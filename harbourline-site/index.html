@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3e2a1e">
+  <meta name="description" content="Book a US or Irish immigration consultation online for €150 instead of €200. Fictional campaign page for a college project.">
+  <title>Immigration Consultation Ireland &amp; US: €50 Off | Harbourline</title>
+
+  <!-- Google Fonts (same typefaces as the original) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <meta name="robots" content="index, follow">
+  <!-- TODO: replace with your real GitHub Pages URL (canonical + og:url) -->
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPO/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="€50 off your US or Irish immigration consultation | Harbourline">
+  <meta property="og:description" content="Pay €150 instead of €200. Fictional campaign page for a college project.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPO/">
+  <meta property="og:locale" content="en_IE">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%233e2a1e'/%3E%3Ctext x='32' y='45' font-size='40' text-anchor='middle' fill='%23e3cfb4' font-family='Georgia,serif'%3EH%3C/text%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+   {"@type":"Service","name":"US and Irish immigration consultation","provider":{"@type":"Organization","name":"Harbourline (fictional)"},"areaServed":["US","IE"],"offers":{"@type":"Offer","price":"150","priceCurrency":"EUR","description":"€50 off the regular €200 consultation fee"}},
+   {"@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How does the €50 consultation credit work?","acceptedAnswer":{"@type":"Answer","text":"When you book an eligible US or Irish immigration consultation while the campaign is running, the usual €200 consultation fee is reduced by €50, making your fee €150."}},
+    {"@type":"Question","name":"Which consultations qualify?","acceptedAnswer":{"@type":"Answer","text":"The promotion applies to US immigration consultations and Irish immigration consultations."}},
+    {"@type":"Question","name":"Do I have to attend my consultation straight away?","acceptedAnswer":{"@type":"Answer","text":"The offer is based on when you make your booking. Appointment dates depend on availability shown by the booking provider."}},
+    {"@type":"Question","name":"Is there a closing date?","acceptedAnswer":{"@type":"Answer","text":"No end date has been set for this campaign. Please check the current consultation fee when you book."}}]}]}
+  </script>
+
+  <!-- Consent Mode: defaults to denied BEFORE GTM loads -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
+  </script>
+  <!-- Google Tag Manager: replace GTM-XXXXXXX with your demo container ID -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PR3R8HBD');</script>
+
+  <style>
+    /* Palette from the original page, mapped onto Bootstrap's CSS variables */
+    :root {
+      --deep: #3e2a1e; --deep-dark: #2b1c13; --teal: #8a5a3b; --sage: #e3cfb4;
+      --cream: #f5ede0; --paper: #fdf9f3; --muted: #7a6656; --line: #e7dccb;
+      --bs-body-font-family: 'DM Sans', Arial, sans-serif;
+      --bs-body-bg: var(--paper);
+      --bs-body-color: #3a2b22;
+      --bs-link-color: var(--deep);
+      --bs-border-radius: 2px;
+    }
+    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+    h1, h2, h3, .font-serif { font-family: 'Playfair Display', Georgia, serif; font-weight: 400; letter-spacing: -.035em; line-height: 1.14; }
+    h1 { font-size: clamp(3rem, 5.9vw, 5.6rem); }
+    h2 { font-size: clamp(2.2rem, 4.2vw, 3.7rem); }
+    .eyebrow { display: block; margin-bottom: 1.1rem; color: var(--teal); font-weight: 700; font-size: .74rem; letter-spacing: .17em; text-transform: uppercase; }
+    .text-muted-custom { color: var(--muted); }
+    :focus-visible { outline: 3px solid #dfae58 !important; outline-offset: 3px; }
+
+    /* Buttons */
+    .btn { --bs-btn-font-weight: 700; --bs-btn-font-size: .87rem; --bs-btn-padding-x: 1.5rem; --bs-btn-padding-y: .95rem; transition: transform .2s ease, background .2s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-sage { --bs-btn-bg: var(--sage); --bs-btn-color: var(--deep-dark); --bs-btn-border-color: var(--sage);
+      --bs-btn-hover-bg: #efe0c8; --bs-btn-hover-color: var(--deep-dark); --bs-btn-hover-border-color: #efe0c8;
+      --bs-btn-active-bg: #efe0c8; --bs-btn-active-color: var(--deep-dark); }
+    .btn-deep { --bs-btn-bg: var(--deep); --bs-btn-color: #fff; --bs-btn-border-color: var(--deep);
+      --bs-btn-hover-bg: #5a3d2b; --bs-btn-hover-color: #fff; --bs-btn-hover-border-color: #5a3d2b;
+      --bs-btn-active-bg: #5a3d2b; --bs-btn-active-color: #fff; }
+
+    /* Promo bar + navbar */
+    .promo-bar { background: var(--sage); color: var(--deep-dark); font-size: .79rem; font-weight: 600; }
+    .promo-bar a { color: inherit; border-bottom: 1px solid var(--deep); text-decoration: none; white-space: nowrap; }
+    .site-nav { background: rgba(252,250,246,.97); border-bottom: 1px solid rgba(62,42,30,.12); backdrop-filter: blur(12px); min-height: 87px; }
+    .brand-name { font: 500 1.75rem/1.1 'Playfair Display', Georgia, serif; letter-spacing: -.045em; color: var(--deep); }
+    .brand-sub { display: block; font-size: .57rem; letter-spacing: .25em; text-transform: uppercase; font-weight: 700; margin-top: 6px; color: var(--deep); }
+    .site-nav .nav-link { font-size: .84rem; font-weight: 600; color: var(--deep); }
+    .site-nav .nav-link:hover { color: var(--teal); }
+
+    /* Hero */
+    .hero { position: relative; background: var(--deep); color: #fff; overflow: hidden; padding-block: 5.5rem 6rem; }
+    .hero::before { content: ''; position: absolute; width: 650px; height: 650px; border: 1px solid rgba(227,207,180,.15); border-radius: 50%; top: -340px; right: -190px; box-shadow: 0 0 0 125px rgba(227,207,180,.035), 0 0 0 240px rgba(227,207,180,.025); pointer-events: none; }
+    .hero .eyebrow, .hero h1 em { color: var(--sage); }
+    .hero h1 em { font-weight: 400; }
+    .hero-lead { max-width: 570px; color: #f0e4d3; font-size: 1.06rem; line-height: 1.8; }
+    .hero-micro { font-size: .78rem; color: #e0cdb6; }
+    .offer-art { position: relative; isolation: isolate; padding: 28px 0 28px 24px; }
+    .offer-art::before { content: ''; position: absolute; inset: 0 0 0 24px; background: #5a3d2b; transform: rotate(5deg); z-index: -1; }
+    .offer-art::after { content: ''; position: absolute; height: 150px; width: 150px; border: 1px solid rgba(255,255,255,.26); border-radius: 50%; right: -33px; top: -55px; z-index: -1; }
+    .offer-card { background: var(--cream); color: var(--deep); box-shadow: 0 22px 65px rgba(43,28,19,.18); min-height: 455px; position: relative; overflow: hidden; }
+    .offer-card::after { content: '✳'; position: absolute; right: -18px; top: -68px; color: rgba(138,90,59,.10); font-size: 13rem; font-family: Georgia, serif; line-height: 1; }
+    .card-kicker { color: var(--teal); text-transform: uppercase; letter-spacing: .19em; font-size: .72rem; font-weight: 700; }
+    .price-now { font-size: clamp(4rem, 7vw, 6rem); font-weight: 700; line-height: 1; letter-spacing: -.065em; }
+    .price-was { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 2px; font-size: 1.5rem; }
+    .save-line { background: #ecdcc3; color: var(--deep); font-weight: 700; font-size: .88rem; }
+    .card-bottom { border-top: 1px dashed #c9b59c; color: var(--muted); font-size: .79rem; }
+
+    /* Trust strip */
+    .trust { background: var(--cream); border-bottom: 1px solid var(--line); }
+    .trust-item { color: var(--deep); font-size: .73rem; letter-spacing: .13em; font-weight: 700; text-transform: uppercase; }
+    .trust-item::before { content: '✦'; color: var(--teal); font-size: 1.1rem; margin-right: .7rem; }
+
+    /* Sections */
+    .section { padding-block: 6.5rem; }
+    .section-intro { max-width: 755px; margin-bottom: 3rem; }
+    .section-intro p { margin-top: 1.4rem; color: var(--muted); max-width: 660px; }
+    .bg-cream { background: var(--cream); }
+    .benefit { background: #f6eee1; border: 0; border-top: 2px solid var(--teal); border-radius: 0; }
+    .benefit-icon { color: var(--teal); font: 400 2.05rem/1 'Playfair Display', Georgia, serif; }
+    .path-card { background: var(--paper); border: 0; border-radius: 0; min-height: 365px; }
+    .path-label { align-self: flex-start; border: 1px solid var(--line); background: #f3e8d6; font-size: .72rem; font-weight: 700; letter-spacing: .16em; color: var(--deep); padding: .7rem .95rem; }
+    .text-link { color: var(--deep); border-bottom: 1px solid var(--teal); padding-bottom: 4px; font-size: .85rem; font-weight: 700; text-decoration: none; align-self: flex-start; }
+    .step { border-top: 1px solid var(--teal); padding-top: 1.5rem; }
+    .step-no { font: 400 1.7rem 'Playfair Display', Georgia, serif; color: var(--teal); margin-bottom: 1rem; }
+    .terms-band { background: #efe4d2; padding-block: 3.3rem; text-align: center; }
+    .terms-band p { font: 400 clamp(1.35rem, 2.5vw, 2.1rem)/1.5 'Playfair Display', Georgia, serif; max-width: 900px; margin: 0 auto; color: var(--deep); }
+
+    /* FAQ (Bootstrap accordion, restyled) */
+    .accordion { --bs-accordion-bg: transparent; --bs-accordion-border-color: var(--line); --bs-accordion-border-radius: 0; --bs-accordion-inner-border-radius: 0;
+      --bs-accordion-btn-color: var(--deep); --bs-accordion-active-color: var(--deep); --bs-accordion-active-bg: transparent;
+      --bs-accordion-btn-focus-box-shadow: none; --bs-accordion-btn-padding-y: 1.5rem; --bs-accordion-btn-padding-x: 0; --bs-accordion-body-padding-x: 0; }
+    .accordion-item { border-left: 0; border-right: 0; }
+    .accordion-button { font-weight: 700; font-size: 1.05rem; box-shadow: none !important; }
+    .accordion-body { color: var(--muted); font-size: .94rem; max-width: 580px; padding-top: 0; }
+
+    /* Booking */
+    .booking { background: var(--deep); color: #fff; padding-block: 6.5rem 5.5rem; text-align: center; }
+    .booking .eyebrow, .booking h2 em { color: var(--sage); }
+    .booking h2 em { font-style: normal; }
+    .booking-copy { color: #eadcc7; max-width: 590px; }
+    .booking .btn-check + .btn { --bs-btn-color: #fff; --bs-btn-border-color: #b79a7c; --bs-btn-hover-bg: rgba(227,207,180,.1); --bs-btn-hover-color: #fff; --bs-btn-hover-border-color: var(--sage);
+      --bs-btn-padding-y: .75rem; --bs-btn-font-weight: 600; }
+    .booking .btn-check:checked + .btn { background: rgba(227,207,180,.16); border-color: var(--sage); color: #fff; }
+    .booking .btn-check:focus-visible + .btn { outline: 3px solid #dfae58; outline-offset: 3px; }
+    /* Consultation radio choices: match this page's brown and warm-cream palette. */
+    .consultation-choice {
+      display: inline-flex; align-items: center; justify-content: center; gap: .65rem;
+      min-height: 48px; padding: .75rem 1.1rem; cursor: pointer;
+      border: 1px solid #b79a7c; border-radius: 2px;
+      color: var(--cream); font-size: .87rem; font-weight: 600;
+      transition: background-color .2s ease, border-color .2s ease;
+    }
+    .consultation-choice:hover { background: rgba(227,207,180,.1); border-color: var(--sage); }
+    .consultation-choice:has(input:checked) { background: var(--sage); border-color: var(--sage); color: var(--deep-dark); }
+    .consultation-choice:has(input:focus-visible) { outline: 3px solid #dfae58; outline-offset: 3px; }
+    .consultation-choice input { width: 16px; height: 16px; margin: 0; accent-color: var(--teal); }
+    .booking-note { font-size: .78rem; color: #dcc9b0; }
+    .demo-note { max-width: 560px; background: var(--cream); border-left: 4px solid #dfae58; color: var(--deep); text-align: left; font-size: .88rem; }
+
+    /* Cookie consent banner */
+    .consent-banner { position: fixed; z-index: 1080; left: 1rem; right: 1rem; bottom: 1rem; max-width: 460px; background: var(--cream); color: var(--deep); border: 1px solid var(--teal); }
+    .consent-banner[hidden] { display: none; }
+    .cookie-link { background: none; border: 0; padding: 0; color: #eadcc7; font-size: .85rem; text-decoration: underline; }
+    .path-img { border-radius: 2px; aspect-ratio: 15 / 8; object-fit: cover; }
+
+    /* Footer */
+    footer { background: var(--deep-dark); color: #fff; }
+    footer .brand-name, footer .brand-sub { color: #fff; }
+    footer p, .footer-links a { color: #dcc9b0; font-size: .84rem; }
+    .footer-links a { text-decoration: none; color: #eadcc7; font-size: .85rem; }
+    .footer-links a:hover { text-decoration: underline; }
+    .copyright { border-top: 1px solid rgba(255,255,255,.18); font-size: .75rem; color: #cdb99f; }
+
+    @media (max-width: 767.98px) {
+      .section { padding-block: 4.5rem; }
+      .hero { padding-block: 4rem 4.5rem; }
+      .offer-art { padding-left: 13px; }
+      .offer-art::before { left: 13px; }
+      .offer-card { min-height: 405px; }
+      .booking .btn-cta { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+  </style>
+</head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PR3R8HBD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<body>
+  <!-- GTM noscript: replace GTM-XXXXXXX with your container ID -->
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR3R8HBD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <a class="visually-hidden-focusable position-absolute bg-white p-2 m-2 z-3" href="#main">Skip to content</a>
+
+  <!-- Promo bar -->
+  <div class="promo-bar text-center py-2 px-3" id="promoBar">
+    <strong>CURRENT OFFER:</strong> €50 off US &amp; Irish immigration consultations.
+    <a class="ms-1" href="#booking">Claim your credit ↗</a>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-md site-nav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand py-0" href="#home" aria-label="Harbourline Immigration, home">
+          <span class="brand-name">Harbourline</span>
+          <span class="brand-sub">Immigration Consultations</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav align-items-md-center gap-md-3">
+            <li class="nav-item"><a class="nav-link" href="#offer">The offer</a></li>
+            <li class="nav-item"><a class="nav-link" href="#consultations">Consultations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
+            <li class="nav-item ms-md-2 py-2 py-md-0"><a class="btn btn-deep" href="#booking" data-track="nav_claim_credit">Claim €50 Credit ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="eyebrow">US &amp; Irish Immigration · Special offer</span>
+            <h1 id="heroTitle">Your next move.<br><em>€50 less.</em></h1>
+            <p class="hero-lead my-4">Thinking about your next step in the US or Ireland? Book your immigration consultation now and get <strong>€50 off</strong> the usual €200 fee. Your consultation is just <strong>€150</strong>.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-sage" href="#booking" data-track="hero_book">Book for €150 <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-outline-light" href="#offer" data-track="hero_explore">Explore the offer</a>
+            </div>
+            <p class="hero-micro mt-3 mb-0">US or Irish consultation · Book online today</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="offer-art mx-auto" style="max-width:520px" aria-label="Promotional consultation price: €150 instead of €200, saving €50">
+              <div class="offer-card d-flex flex-column justify-content-between p-4 p-md-5">
+                <div class="position-relative" style="z-index:1">
+                  <div class="card-kicker">A little more room to move</div>
+                  <h2 class="mt-3" style="font-size:clamp(2.2rem,4vw,3.3rem);max-width:360px">€50 Consultation Credit</h2>
+                  <div class="d-flex align-items-baseline gap-3 mt-4">
+                    <span class="price-now">€150</span>
+                    <span class="price-was" aria-label="Regular price €200">€200</span>
+                  </div>
+                  <div class="save-line d-inline-flex align-items-center gap-2 mt-3 px-3 py-2">✦ You save €50</div>
+                </div>
+                <div class="card-bottom d-flex justify-content-between align-items-center gap-3 mt-4 pt-3">
+                  <span><strong class="text-dark">One consultation</strong><br>US or Irish immigration</span>
+                  <span class="font-serif fs-4" style="color:var(--teal)" aria-hidden="true">H.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <div class="trust" aria-label="Campaign highlights">
+      <div class="container py-3">
+        <div class="row row-cols-2 row-cols-lg-4 g-3 justify-content-between">
+          <div class="col trust-item">US immigration</div>
+          <div class="col trust-item">Irish immigration</div>
+          <div class="col trust-item">€50 off the €200 fee</div>
+          <div class="col trust-item">Book online today</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The offer -->
+    <section class="section" id="offer" aria-labelledby="offerTitle">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">The €50 consultation credit</span>
+          <h2 id="offerTitle">A first conversation.<br>A better price.</h2>
+          <p>Immigration decisions can bring big questions. Your consultation is an opportunity to talk through your circumstances, understand what you want to achieve, and discuss potential next steps.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><article class="card benefit h-100 p-4"><div class="benefit-icon mb-3" aria-hidden="true">01 /</div><h3 class="fs-3">Bring your questions</h3><p class="text-muted-custom mt-3 mb-0 small">Start with the immigration situation that matters most to you, your family or your plans.</p></article></div>
+          <div class="col-md-6 col-lg-4"><article class="card benefit h-100 p-4"><div class="benefit-icon mb-3" aria-hidden="true">02 /</div><h3 class="fs-3">Explore your options</h3><p class="text-muted-custom mt-3 mb-0 small">Use the conversation to discuss relevant considerations and possible directions.</p></article></div>
+          <div class="col-md-12 col-lg-4"><article class="card benefit h-100 p-4"><div class="benefit-icon mb-3" aria-hidden="true">03 /</div><h3 class="fs-3">Know your next step</h3><p class="text-muted-custom mt-3 mb-0 small">Leave with a clearer picture of what to ask, prepare or consider next.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultations -->
+    <section class="section bg-cream" id="consultations" aria-labelledby="consultationsTitle">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">Two destinations · One offer</span>
+          <h2 id="consultationsTitle">Where are you headed?</h2>
+          <p>Choose the consultation that matches your plans. Both US and Irish immigration consultations qualify for the €50 discount.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <article class="card path-card h-100 p-4 p-lg-5">
+              <img class="img-fluid path-img mb-4" src="images/us-consultation.svg" width="600" height="320" loading="lazy" alt="Illustration of a dashed flight path crossing a circular sun over striped fields, representing a US immigration consultation">
+              <span class="path-label mb-4">UNITED STATES / US</span>
+              <h3>US Immigration Consultation</h3>
+              <p class="text-muted-custom mt-3" style="max-width:410px">Discuss US immigration questions relating to work, family, business, travel or a planned move.</p>
+              <a class="text-link mt-auto" href="#booking" data-choice="us" data-track="choose_us">Choose US consultation ↗</a>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="card path-card h-100 p-4 p-lg-5">
+              <img class="img-fluid path-img mb-4" src="images/ireland-consultation.svg" width="600" height="320" loading="lazy" alt="Illustration of arched Irish doorways beside rolling waves under a pale moon, representing an Irish immigration consultation">
+              <span class="path-label mb-4">IRELAND / IE</span>
+              <h3>Irish Immigration Consultation</h3>
+              <p class="text-muted-custom mt-3" style="max-width:410px">Discuss Irish immigration questions relating to visas, residence, employment, family or a planned move.</p>
+              <a class="text-link mt-auto" href="#booking" data-choice="irish" data-track="choose_irish">Choose Irish consultation ↗</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how-it-works" aria-labelledby="stepsTitle">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">Simple from the start</span>
+          <h2 id="stepsTitle">Three steps to save €50.</h2>
+          <p>There is no complicated code to remember. The offer is a €50 reduction from the standard consultation price.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4"><article class="step"><div class="step-no">01</div><h3 class="fs-3">Choose your focus</h3><p class="text-muted-custom mt-3">Select either a US or Irish immigration consultation.</p></article></div>
+          <div class="col-md-4"><article class="step"><div class="step-no">02</div><h3 class="fs-3">Book your slot</h3><p class="text-muted-custom mt-3">Make your booking while the campaign is running to qualify for the offer.</p></article></div>
+          <div class="col-md-4"><article class="step"><div class="step-no">03</div><h3 class="fs-3">Pay €150, not €200</h3><p class="text-muted-custom mt-3">Your €50 consultation credit brings the standard €200 fee down to €150.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terms band -->
+    <aside class="terms-band" aria-label="Offer summary">
+      <div class="container">
+        <p>“The same first step, with €50 back in your pocket.”</p>
+        <small class="d-block text-muted-custom mt-3">Standard consultation fee €200. Promotional fee €150.</small>
+      </div>
+    </aside>
+
+    <!-- FAQs -->
+    <section class="section" id="faqs" aria-labelledby="faqTitle">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <span class="eyebrow">Good to know</span>
+            <h2 id="faqTitle">Your questions, answered.</h2>
+          </div>
+          <div class="col-lg-8">
+            <div class="accordion accordion-flush" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header fs-6"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">How does the €50 consultation credit work?</button></h3>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">When you book an eligible US or Irish immigration consultation while the campaign is running, the usual €200 consultation fee is reduced by €50, making your fee €150.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header fs-6"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Which consultations qualify?</button></h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">The promotion applies to US immigration consultations and Irish immigration consultations.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header fs-6"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Do I have to attend my consultation straight away?</button></h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">The offer is based on when you make your booking. Appointment dates depend on availability shown by the booking provider.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header fs-6"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">Is there a closing date?</button></h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">No end date has been set for this campaign. Please check the current consultation fee when you book.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking" id="booking" aria-labelledby="bookingTitle">
+      <div class="container">
+        <span class="eyebrow">Your next step starts here</span>
+        <h2 id="bookingTitle">Make the move.<br><em>Keep the €50.</em></h2>
+        <p class="booking-copy mx-auto my-4">Choose your destination, then continue to the consultation booking page to secure the €150 offer.</p>
+
+        <fieldset class="mb-4">
+          <legend class="visually-hidden">Select consultation type</legend>
+          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2 mx-auto" style="max-width:420px">
+            <label class="consultation-choice flex-fill" for="optUs">
+              <input type="radio" name="consultation" id="optUs" value="us" checked autocomplete="off">
+              US immigration
+            </label>
+            <label class="consultation-choice flex-fill" for="optIe">
+              <input type="radio" name="consultation" id="optIe" value="irish" autocomplete="off">
+              Irish immigration
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="btn btn-sage btn-cta booking-price-cta px-5" type="button" id="bookingButton" data-track="booking_continue">Continue to booking for €150 ↗</button>
+        <p class="booking-note mt-3">€50 credit against the regular €200 consultation fee.</p>
+
+        <div class="demo-note mx-auto mt-4 p-3" id="demoNote" role="status" hidden>
+          <strong>Demo only.</strong> This is a fictional campaign created for a college project. No appointment has been booked and no payment is taken.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 pb-4">
+        <div class="col-lg-7">
+          <a class="text-decoration-none d-inline-block" href="#home"><span class="brand-name">Harbourline</span><span class="brand-sub">Immigration Consultations</span></a>
+          <p class="mt-3 mb-0" style="max-width:480px">Helping you start the conversation about your next move between the US and Ireland.</p>
+        </div>
+        <nav class="col-lg-5 d-flex flex-wrap gap-3 justify-content-lg-end align-content-start footer-links" aria-label="Footer navigation">
+          <a href="#offer">The offer</a><a href="#consultations">Consultations</a><a href="#how-it-works">How it works</a><a href="#faqs">FAQs</a><button type="button" class="cookie-link" id="cookieSettings">Cookie settings</button>
+        </nav>
+      </div>
+      <!-- Required by the Week 10 brief: make clear the campaign is fictional -->
+      <p class="fw-semibold mb-3" style="color:var(--sage)">Fictional campaign: this page is a student project for educational purposes only. Harbourline, its offer, prices and dates are not real, and no services are being sold.</p>
+      <div class="copyright pt-3">© <span id="year">2026</span> Harbourline (fictional). All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Cookie consent banner (GTM Consent Mode) -->
+  <div id="consentBanner" class="consent-banner card shadow" role="dialog" aria-labelledby="consentTitle" hidden>
+    <div class="card-body p-4">
+      <h2 id="consentTitle" class="fs-5 mb-2" style="letter-spacing:0">Cookies and analytics</h2>
+      <p class="small mb-3">This demo page uses Google Analytics 4 through Google Tag Manager to count visits and button clicks. Analytics only runs if you accept. You can change your choice any time from the footer.</p>
+      <div class="d-flex flex-wrap gap-2">
+        <button type="button" class="btn btn-deep" id="consentAccept">Accept analytics</button>
+        <button type="button" class="btn btn-outline-dark" id="consentReject">Reject</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // "Choose US / Irish consultation" links pre-select the radio buttons
+    document.querySelectorAll('[data-choice]').forEach(link => {
+      link.addEventListener('click', () => {
+        const radio = document.querySelector(`input[name="consultation"][value="${link.dataset.choice}"]`);
+        if (radio) radio.checked = true;
+        dataLayer.push({ event: 'consultation_select', consultation_type: link.dataset.choice, selected_from: 'consultation_card' });
+        document.getElementById('demoNote').hidden = true;
+      });
+    });
+
+    // Fictional campaign: no real booking link, so show the demo note
+    document.getElementById('bookingButton').addEventListener('click', () => {
+      const chosen = document.querySelector('input[name="consultation"]:checked');
+      dataLayer.push({ event: 'booking_continue', consultation_type: chosen ? chosen.value : 'none', value: 150, currency: 'EUR' });
+      const note = document.getElementById('demoNote');
+      note.hidden = false;
+      note.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    });
+
+    // Event: consultation_select (radio change)
+    document.querySelectorAll('input[name="consultation"]').forEach(r => r.addEventListener('change', () => {
+      dataLayer.push({ event: 'consultation_select', consultation_type: r.value, selected_from: 'booking_form' });
+    }));
+
+    // Event: scroll_depth (25/50/75/90, once each)
+    const seen = new Set();
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const pct = (h.scrollTop + window.innerHeight) / h.scrollHeight * 100;
+      [25, 50, 75, 90].forEach(m => { if (pct >= m && !seen.has(m)) { seen.add(m); dataLayer.push({ event: 'scroll_depth', percent_scrolled: m }); } });
+    }, { passive: true });
+
+    // Event: faq_open
+    document.getElementById('faqAccordion').addEventListener('shown.bs.collapse', e => dataLayer.push({ event: 'faq_open', faq_id: e.target.id }));
+
+    // Cookie consent (GTM Consent Mode): updates analytics_storage; choice kept in localStorage
+    const banner = document.getElementById('consentBanner');
+    const setConsent = granted => {
+      gtag('consent', 'update', { analytics_storage: granted ? 'granted' : 'denied' });
+      dataLayer.push({ event: 'consent_update', analytics_consent: granted ? 'granted' : 'denied' });
+      try { localStorage.setItem('hl_consent', granted ? 'granted' : 'denied'); } catch (e) {}
+      banner.hidden = true;
+    };
+    let saved = null;
+    try { saved = localStorage.getItem('hl_consent'); } catch (e) {}
+    if (saved) { gtag('consent', 'update', { analytics_storage: saved }); } else { banner.hidden = false; }
+    document.getElementById('consentAccept').addEventListener('click', () => setConsent(true));
+    document.getElementById('consentReject').addEventListener('click', () => setConsent(false));
+    document.getElementById('cookieSettings').addEventListener('click', () => { banner.hidden = false; banner.querySelector('button').focus(); });
+
+    /* GA4 / GTM tracking checks: pushes a click event to the dataLayer for every element with data-track.
+       Verify in GTM Preview / GA4 DebugView. */
+    window.dataLayer = window.dataLayer || [];
+    document.addEventListener('click', e => {
+      const el = e.target.closest('[data-track]');
+      if (el) window.dataLayer.push({ event: 'cta_click', cta_name: el.dataset.track });
+    });
+  </script>
+</body>
+</html>
